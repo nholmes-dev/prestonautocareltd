@@ -234,13 +234,12 @@ At Preston Autocare, we guarantee fast and reliable repair for your car – usin
 <script>
 function redirectToMOT(event) {
     event.preventDefault();
-    // Get the input value and remove spaces
-    var reg = document.getElementById('reg-input').value.replace(/\s+/g, '');
+    // Get the input value, remove spaces, and ensure it is lowercase
+    var reg = document.getElementById('reg-input').value.replace(/\s+/g, '').toLowerCase();
     
-    // Redirect to the specific vehicle result page
-    // The official format for checking a specific vehicle is:
-    // https://www.check-mot.service.gov.uk/status?registration=[REGISTRATION]
-    window.open('https://www.check-mot.service.gov.uk/status?registration=' + encodeURIComponent(reg), '_blank');
+    // Redirect to the exact GOV.UK results page format
+    var url = 'https://www.check-mot.service.gov.uk/results?registration=' + encodeURIComponent(reg) + '&checkRecalls=true';
+    window.open(url, '_blank');
 }
 </script>
 </body>
