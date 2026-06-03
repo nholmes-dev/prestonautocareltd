@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -197,6 +198,21 @@ At Preston Autocare, we guarantee fast and reliable repair for your car – usin
                 </div>
             </div>
             <button type="submit" class="btn-submit">Send Form</button>
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+    
+    <label>Your Email:</label>
+    <input type="email" name="email" required>
+    
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAADeX585-1G8GepCL"></div>
+
+    <button type="submit">Send Message</button>
+</form>
+            
         </form>
     </section>
 

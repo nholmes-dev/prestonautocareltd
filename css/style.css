@@ -602,3 +602,9 @@ body {
 .servicing-section p {
     font-family: var(--font-stack); /* Ensures consistent body text */
 }
+
+.cf-turnstile {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
