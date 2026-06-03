@@ -235,6 +235,13 @@ body {
     background-color: #ffffff;
 }
 
+.mot-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
 .mot-container {
     max-width: 1200px;
     margin: 0 auto;
