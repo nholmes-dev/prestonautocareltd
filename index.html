@@ -110,6 +110,25 @@ At Preston Autocare, we guarantee fast and reliable repair for your car – usin
         </div>
     </section>
 
+    <div class="mot-checker-container">
+    <label for="reg-input">Check if your MOT is due:</label>
+    <form id="mot-form" onsubmit="redirectToMOT(event)">
+        <div class="number-plate">
+            <div class="plate-blue-strip">UK</div>
+            <input type="text" id="reg-input" placeholder="REG NO" required maxlength="8">
+            <button type="submit">CHECK</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function redirectToMOT(event) {
+    event.preventDefault();
+    var reg = document.getElementById('reg-input').value;
+    window.open('https://www.check-mot.service.gov.uk/?vehicleRegistration=' + reg, '_blank');
+}
+</script>
+
     <!-- Company Values & Mini Gallery -->
     <section class="gallery-text-section">
         <div class="gallery-text-container">
