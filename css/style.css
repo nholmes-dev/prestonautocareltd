@@ -437,3 +437,30 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* --- Header Wrapper Adjustment --- */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    gap: 0; /* Reduced to zero since the phone button is moved down */
+}
+
+/* --- Hero Phone Button Styles --- */
+.hero-phone-btn {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Spaces out the red icon from the numbers */
+}
+
+/* Style the phone icon red to match your brand style rules */
+.phone-icon-red {
+    color: #cc2a2a; /* Clean solid red tint */
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
+    display: inline-block;
+}
