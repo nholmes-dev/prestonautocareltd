@@ -171,48 +171,38 @@ At Preston Autocare, we guarantee fast and reliable repair for your car – usin
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+ <!-- Contact Form Section -->
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <p>Please feel free to message us, and we'll contact you as soon as possible.</p>
         
-        <form class="contact-form" onsubmit="event.preventDefault();">
+        <!-- Use the Formspree action and method on one single form -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
             <div class="form-row">
                 <div class="input-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="input-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone">
+                    <input type="tel" id="phone" name="phone">
                 </div>
             </div>
             <div class="form-row large-row">
                 <div class="input-group full-width">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="6" required></textarea>
+                    <textarea id="message" name="message" rows="6" required></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn-submit">Send Form</button>
-    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
-    <label>Your Name:</label>
-    <input type="text" name="name" required>
-    
-    <label>Your Email:</label>
-    <input type="email" name="email" required>
-    
-    <label>Message:</label>
-    <textarea name="message" required></textarea>
 
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAADeX585-1G8GepCL"></div>
+            <!-- Cloudflare Turnstile -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADeX585-1G8GepCL" style="margin-bottom: 20px; display: flex; justify-content: center;"></div>
 
-    <button type="submit">Send Message</button>
-</form>
-            
+            <button type="submit" class="btn-submit">Send Message</button>
         </form>
     </section>
 
