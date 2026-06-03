@@ -239,6 +239,17 @@ function redirectToMOT(event) {
         <p>&copy; Website created by <a href="https://www.nhwebdesign.co.uk/" target="_blank" rel="noopener">NH Web Design</a> - All Rights Reserved.</p>
         </div>
     </footer>
-
+<script>
+function redirectToMOT(event) {
+    event.preventDefault();
+    // Get the input value and remove spaces
+    var reg = document.getElementById('reg-input').value.replace(/\s+/g, '');
+    
+    // Redirect to the specific vehicle result page
+    // The official format for checking a specific vehicle is:
+    // https://www.check-mot.service.gov.uk/status?registration=[REGISTRATION]
+    window.open('https://www.check-mot.service.gov.uk/status?registration=' + encodeURIComponent(reg), '_blank');
+}
+</script>
 </body>
 </html>
