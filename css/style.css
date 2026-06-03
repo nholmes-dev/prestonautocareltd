@@ -27,7 +27,7 @@ body {
 /* --- Header --- */
 .site-header {
     background: #ffffff;
-    padding: 15px 30px;
+    padding: 25px 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
@@ -38,14 +38,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;      /* Center the items horizontally */
+    gap: 20px;                /* Give breathing room between the large logo and phone button */
 }
 
 .logo img {
-    height: 55px;
+    height: 165px;            /* Scaled 3x larger from the original 55px */
     width: auto;
     display: block;
+    margin: 0 auto;           /* Secondary alignment insurance */
 }
 
 .phone-btn {
@@ -66,7 +68,7 @@ body {
 /* --- Hero Section --- */
 .hero {
     position: relative;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background: url('../images/background.png') no-repeat center center/cover;
     height: 70vh;
     min-height: 450px;
     display: flex;
@@ -416,6 +418,10 @@ body {
     .header-container {
         flex-direction: column;
         gap: 15px;
+    }
+
+    .logo img {
+        height: 110px;        /* Responsively scale down the large logo on compact screens */
     }
     
     .services-grid {
