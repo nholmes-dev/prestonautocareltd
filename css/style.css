@@ -66,7 +66,7 @@ body {
 /* --- Hero Section --- */
 .hero {
     position: relative;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background: url('../images/background.png') no-repeat center center/cover;
     height: 70vh;
     min-height: 450px;
     display: flex;
