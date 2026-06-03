@@ -229,6 +229,35 @@ body {
     font-weight: 600;
 }
 
+/* --- MOT Section --- */
+.mot-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.mot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Override the previous margin for the checker so it aligns with the text block */
+.mot-checker-container {
+    margin: 20px 0 0 0;
+    text-align: left;
+}
+
+/* Ensure responsiveness for the MOT section */
+@media (max-width: 992px) {
+    .mot-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
 /* --- Gallery & Values Section --- */
 .gallery-text-section {
     padding: 80px 20px;
