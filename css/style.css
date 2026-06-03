@@ -568,9 +568,10 @@ body {
     padding: 5px 10px;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: var(--font-stack); /* CHANGED FROM sans-serif TO var(--font-stack) */
     letter-spacing: 2px;
     width: 150px;
+    outline: none;
 }
 
 .number-plate button {
@@ -580,4 +581,24 @@ body {
     padding: 0 10px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.servicing-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+    font-family: var(--font-stack); /* Ensures consistency */
+}
+
+.servicing-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-family: var(--font-stack); /* Ensures consistency */
+}
+
+.servicing-section p {
+    font-family: var(--font-stack); /* Ensures consistent body text */
 }
