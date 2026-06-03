@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Autocare Ltd</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Preston Autocare">
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Preston Autocare Ltd</h1>
+            <p class="hero-subtext">We are a small family run garage serving Wrose & surrounding areas.
+At Preston Autocare, we guarantee fast and reliable repair for your car – using only OEM parts at your request. From simple oil changes to complex restorations, our highly qualified mechanics will do whatever it takes to get your treasured vehicle back on the road.</p>
+            <a href="tel:01274966496" class="btn-primary hero-phone-btn">
+            <span class="phone-icon-red">📞</span> 01274 966496
+        </a>
+        </div>
+    </section>
+
+    <!-- Features & Opening Hours Section -->
+    <section class="info-section">
+        <div class="info-container">
+            <div class="services-overview">
+                <h2>Family run local business</h2>
+                <p class="section-desc">We cover a range of vehicle repairs including...</p>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">👍</div>
+                        <div class="service-text">
+                            <h3>Main Dealer Standards</h3>
+                            <ul>
+                                <li>- MOT Testing (not commercial)</li>
+                                <li>- MOT Repairs</li>
+                                <li>- Full & Interim Servicing</li>
+                                <li>- Computer Diagnostics</li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">🔧</div>
+                        <div class="service-text">
+                            <h3>Great Customer Service</h3>
+                            <ul>
+                                <li>- Brake Repairs</li>
+                                <li>- Exhaust Systems</li>
+                                <li>- Steering and Suspension</li>
+                                <li>- Welding and Fabrication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">💷</div>
+                        <div class="service-text">
+                            <h3>Fair Pricing Policy</h3>
+                            <ul>
+                                <li>- Drivability Problems</li>
+                                <li>- Engine Tuning</li>
+                                <li>- Clutch Replacment</li>
+                                <li>- Engine Repairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">✅</div>
+                        <div class="service-text">
+                            <h3>Great Customer Feedback</h3>
+                            <ul>
+                                <li>- Tyres for all budgets</li>
+                                <li>- Complete Safety Analysis</li>
+                                <li>- Air Conditioning Service</li>
+                                <li>- Electrical Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="hours-box">
+                <h3>Opening Hours</h3>
+                <table class="hours-table">
+                    <tr><td>Monday</td><td class="text-right">8.30 - 17.00</td></tr>
+                    <tr><td>Tuesday</td><td class="text-right">8.30 - 17.00</td></tr>
+                    <tr><td>Wednesday</td><td class="text-right">8.30 - 18.00</td></tr>
+                    <tr><td>Thursday</td><td class="text-right">8.30 - 18.00</td></tr>
+                    <tr><td>Friday</td><td class="text-right">8.30 - 18.00</td></tr>
+                    <tr><td>Saturday</td><td class="text-right">8.30 - 12.00</td></tr>
+                    <tr><td>Sunday</td><td class="text-right">Closed</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values & Mini Gallery -->
+    <section class="gallery-text-section">
+        <div class="gallery-text-container">
+            <div class="text-blocks">
+                <div class="block">
+                    <h3>We repair all makes and models of cars and vans:</h3>
+                    <p>Whether it's a service you require or a full engine rebuild, we have the tools and the know-how to get you back on the road as quickly as possible.</p>
+                </div>
+                <div class="block">
+                    <h3>Honest and Reliable:</h3>
+                    <p>Our straightforward and open pricing policy means that you will only be charged for work that is required, and all costs will be agreed in advance.</p>
+                </div>
+                <div class="block">
+                    <h3>We Are Passionate:</h3>
+                    <p>With over 15 years' experience you and your vehicle are in good hands - our well-equipped garage has all the necessary equipment to repair almost any vehicle.</p>
+                </div>
+            </div>
+<div class="single-image-showcase">
+                <img src="images/garage.png" alt="Preston Autocare garage">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <h2>CONTACT US</h2>
+        <p>Please feel free to message us, and we'll contact you as soon as possible.</p>
+        
+        <form class="contact-form" onsubmit="event.preventDefault();">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
+                </div>
+            </div>
+            <div class="form-row large-row">
+                <div class="input-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">SEND FORM</button>
+        </form>
+    </section>
+
+    <!-- Footer & Map Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Address</h3>
+                <address>
+                    Preston Autocare Ltd<br>
+                    53 Wrose Road,<br>
+                    Shipley,<br>
+                    BD18 1HU
+                </address>
+
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> <a href="mailto:preston.autocare19@gmail.com">preston.autocare19@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:01274966496">01274 966496</a></p>
+            </div>
+            
+            <!-- Map Container -->
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.7773077687752!2d-1.7614621230088934!3d53.82903743849754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be3f46eeab083%3A0xdb24892dcdbbcc7c!2spreston%20autocare%20ltd!5e0!3m2!1sen!2suk!4v1780491046645!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Website create by NH Web Design - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
