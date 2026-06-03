@@ -480,3 +480,16 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* --- Footer Backlink Styling --- */
+.footer-bottom a {
+    color: var(--primary-color); /* Uses your signature blue accent color */
+    text-decoration: none;       /* Removes the default underline */
+    font-weight: 600;            /* Gives it a clean weight adjustment */
+    transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;              /* Turns crisp white when a user hovers over it */
+    text-decoration: underline;  /* Adds the underline back only on hover */
+}
