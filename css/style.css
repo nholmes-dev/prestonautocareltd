@@ -438,18 +438,18 @@ body {
 
 /* --- Footer --- */
 .site-footer {
-    background-color: var(--primary-color); /* Changed from #0b0c10 to brand blue */
-    color: #ffffff;
-    padding: 60px 20px 20px 20px;
+    background-color: var(--primary-color); /* Matches your brand blue */
+    color: #ffffff;[cite: 2]
+    padding: 60px 20px 20px 20px;[cite: 2]
 }
 
 .footer-container {
     max-width: 1200px;[cite: 2]
-    margin: 0 auto;[cite: 2]
+    margin: 0 auto;             /* Centers the footer container on desktop */
     display: grid;[cite: 2]
-    grid-template-columns: 1fr 1fr;[cite: 2]
+    grid-template-columns: 1fr 1fr; /* Side-by-side columns on desktop*/
     gap: 40px;[cite: 2]
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Changed from dark gray to a clean semi-transparent white line*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Soft white divider line */
     padding-bottom: 40px;[cite: 2]
 }
 
@@ -468,22 +468,22 @@ body {
 
 .footer-info address {
     font-style: normal;[cite: 2]
-    color: #f0f0f0; /* Lightened slightly from #aaaaaa for perfect legibility on blue*/
+    color: #f0f0f0;             /* Crisp off-white for excellent readability */
     line-height: 1.8;[cite: 2]
 }
 
 .footer-info p {
-    color: #f0f0f0; /* Lightened slightly from #aaaaaa */
+    color: #f0f0f0;[cite: 2]
     margin-bottom: 8px;[cite: 2]
 }
 
 .footer-info a {
-    color: #ffffff; /* Changed from brand blue to white so it doesn't blend in */
-    text-decoration: underline; /* Adds an underline so users know it is an interactive link*/
+    color: #ffffff;             /* White links so they stand out */
+    text-decoration: underline;  /* Keeps links distinctly interactive */
 }
 
 .footer-info a:hover {
-    color: #e0e0e0; /* Subtle color shift when hovering over email or phone links */
+    color: #e0e0e0;[cite: 2]
 }
 
 .footer-map iframe {
@@ -493,13 +493,13 @@ body {
 .footer-bottom {
     text-align: center;[cite: 2]
     padding-top: 20px;[cite: 2]
-    color: rgba(255, 255, 255, 0.6); /* Changed from #666666 to soft white text */
+    color: rgba(255, 255, 255, 0.6);[cite: 2]
     font-size: 0.85rem;[cite: 2]
 }
 
 /* --- Footer Backlink Styling --- */
 .footer-bottom a {
-    color: #ffffff; /* Changed from brand blue to white for perfect visibility */
+    color: #ffffff;[cite: 2]
     text-decoration: none;[cite: 2]
     font-weight: 600;[cite: 2]
     transition: color 0.2s ease;[cite: 2]
@@ -508,6 +508,49 @@ body {
 .footer-bottom a:hover {
     color: #e0e0e0;[cite: 2]
     text-decoration: underline;[cite: 2]
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 992px) {
+    .info-container,
+    .gallery-text-container,
+    .servicing-container,  
+    .footer-container {
+        grid-template-columns: 1fr; /* Smoothly stacks the text and map on tablets/screens under 992px */
+        gap: 40px;[cite: 2]
+    }
+    
+    .hero-content h1 {
+        font-size: 2.3rem;[cite: 2]
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;[cite: 2]
+        gap: 15px;[cite: 2]
+    }
+
+    .logo img {
+        height: 110px;[cite: 2]
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;[cite: 2]
+    }
+    
+    .form-row {
+        flex-direction: column;[cite: 2]
+        gap: 15px;[cite: 2]
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;[cite: 2]
+    }
+
+    .contact-form {
+        padding: 20px;          /* Ensures custom contact frame looks great on mobile screen widths */
+    }
 }
 
 /* --- Responsive Media Queries --- */
