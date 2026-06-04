@@ -33,6 +33,18 @@ body {
     display: block;                  /* Ensures the border spans the full height of the text block */
 }
 
+/* --- Centered Section Heading Accents (Reviews & Contact) --- */
+.reviews-section h2,
+.contact-section h2 {
+    display: block;                  /* Ensures the element handles width and margins cleanly */
+    width: fit-content;              /* Shrinks the width of the box to exactly match the text length */
+    margin-left: auto;               /* Combined with margin-right to center the shrunken block */
+    margin-right: auto;              /* Combined with margin-left to center the shrunken block */
+    border-left: 5px solid #9C1A14;  /* Adds signature red branding bar */
+    padding-left: 15px;              /* Creates clean breathing room between the bar and the first letter */
+    line-height: 1.1;                /* Perfectly matches the height of the red bar to the text height */
+}
+
 /* --- Header --- */
 .site-header {
     background: #ffffff;
