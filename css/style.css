@@ -24,25 +24,31 @@ body {
     background-color: #ffffff;
 }
 
+/* --- Global Section Heading Accents --- */
 .services-overview h2,
 .mot-section h2,
 .servicing-section h2 {
-    border-left: 5px solid #9C1A14;  /* Matches the red branding thickness */
-    padding-left: 15px;              /* Gives the text breathing room from the bar */
-    line-height: 1.1;                /* Locks the bar height perfectly to the 2rem text size */
-    display: block;                  /* Ensures the border spans the full height of the text block */
+    display: block;
+    width: fit-content;              /* 👈 Hugs the text so the right bar sits next to the last letter */
+    border-left: 5px solid #9C1A14;
+    border-right: 5px solid #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
+    padding-left: 15px;
+    padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
+    line-height: 1.1;
 }
 
 /* --- Centered Section Heading Accents (Reviews & Contact) --- */
 .reviews-section h2,
 .contact-section h2 {
-    display: block;                  /* Ensures the element handles width and margins cleanly */
-    width: fit-content;              /* Shrinks the width of the box to exactly match the text length */
-    margin-left: auto;               /* Combined with margin-right to center the shrunken block */
-    margin-right: auto;              /* Combined with margin-left to center the shrunken block */
-    border-left: 5px solid #9C1A14;  /* Adds signature red branding bar */
-    padding-left: 15px;              /* Creates clean breathing room between the bar and the first letter */
-    line-height: 1.1;                /* Perfectly matches the height of the red bar to the text height */
+    display: block;
+    width: fit-content;              
+    margin-left: auto;               
+    margin-right: auto;              
+    border-left: 5px solid #9C1A14;
+    border-right: 5px solid #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
+    padding-left: 15px;
+    padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
+    line-height: 1.1;
 }
 
 /* --- Header --- */
@@ -524,11 +530,15 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    margin-top: 45px;
-    color: #ffffff;                   /* 🔴 Back to crisp white for perfect readability */
-    border-left: 4px solid #9C1A14;   /* 🔥 NEW: Adds a clean vertical red brand bar to the left */
-    padding-left: 10px;               /* 🔥 NEW: Creates space between the red bar and the text */
-    line-height: 1;                   /* 🔥 NEW: Ensures the bar matches the text height perfectly */
+    margin-top: 45px;                 
+    color: #ffffff;                   
+    display: block;
+    width: fit-content;               /* 👈 NEW: Shrinks wrapper to fit the footer text */
+    border-left: 4px solid #9C1A14;   
+    border-right: 4px solid #9C1A14;  /* 👈 NEW: Adds the right-side branding bar */
+    padding-left: 10px;               
+    padding-right: 10px;              /* 👈 NEW: Balances the spacing on the right side */
+    line-height: 1;                   
 }
 
 .footer-info h3:first-child {
