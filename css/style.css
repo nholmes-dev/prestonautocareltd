@@ -134,7 +134,7 @@ body {
     letter-spacing: 0.5px;
     display: inline-flex;
     align-items: center;
-    gap: 10px;                       
+    justify-content: center;         /* 👈 CHANGED: Keeps text perfectly centered now that icon is gone */
     transition: all 0.3s ease;       
 }
 
@@ -145,9 +145,7 @@ body {
 }
 
 .phone-icon-red {
-    color: #9C1A14; 
-    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
-    display: inline-block;
+    display: none;                   /* 👈 CHANGED: Removes the phone icon from view entirely */
 }
 
 /* --- Info & Opening Hours Section --- */
@@ -505,7 +503,7 @@ body {
     margin-bottom: 15px;
     margin-top: 45px;                 
     color: #ffffff;                   
-    border-left: 4px solid #9C1A14;   /* 🔴 KEPT: Solid red line on the left side only */
+    border-left: 4px solid #9C1A14;   
     padding-left: 10px;               
     line-height: 1;                   
 }
@@ -547,7 +545,7 @@ body {
 
 .footer-bottom a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;      /* 👈 CHANGED: Forces the link to remain underlined */
     font-weight: 600;
     transition: color 0.2s ease;
 }
