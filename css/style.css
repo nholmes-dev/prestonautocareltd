@@ -410,14 +410,14 @@ body {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 14px 45px;
-    font-weight: 700;
-    border-radius: 25px;
+    background-color: #ffffff;       /* Changed from blue to crisp white */
+    color: var(--primary-color);     /* Changed from white text to brand blue */
+    border: 5px solid #9C1A14;       /* Thick red frame matching opening hours thickness */
+    padding: 12px 45px;              /* Trimmed slightly from 14px to balance out the 5px border thickness[cite: 2] */
+    font-weight: 700;                /* Keeps the text crisp and heavily bolded */
+    border-radius: 25px;             /* Retains the rounded pill shape */
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;       /* Expanded from 'background' to smoothly transition colors on hover */
 }
 
 /* --- Footer --- */
