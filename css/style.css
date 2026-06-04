@@ -1,7 +1,7 @@
 /* --- Global Resets & Variables --- */
 :root {
     --primary-color: #2A556C; /* Replaced orange with custom tone */
-    --text-dark: #222222;
+    --text-dark: #2A556C;
     --text-muted: #555555;
     --bg-light: #f9f9f9;
     --font-stack: 'Inter', sans-serif;
