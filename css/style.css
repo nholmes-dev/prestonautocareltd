@@ -124,18 +124,29 @@ body {
 }
 
 /* --- Hero Phone Button Styles --- */
-.hero-phone-btn {
-    font-size: 1.1rem;
-    font-weight: 700;
+.btn-primary.hero-phone-btn {
+    background-color: #ffffff;       /* Changed from blue to crisp white */
+    color: var(--primary-color);     /* Changed from white text to brand blue */
+    border: 5px solid #9C1A14;       /* Thick red frame matching your opening hours thickness */
+    padding: 11px 35px;              /* Balanced down slightly from 14px to account for the 5px border */
+    font-size: 1.1rem;               /* Retains original text size */
+    font-weight: 700;                /* Retains bold weight */
     letter-spacing: 0.5px;
     display: inline-flex;
     align-items: center;
-    gap: 10px; /* Spaces out the red icon from the numbers */
+    gap: 10px;                       /* Spaces out the phone icon from the numbers*/
+    transition: all 0.3s ease;       /* Ensures background, color, and float transition smoothly together */
+}
+
+.btn-primary.hero-phone-btn:hover {
+    background-color: #9C1A14;       /* Fills the button with logo red on hover */
+    color: #ffffff;                  /* Flips the text to crisp white so it stays readable */
+    transform: translateY(-2px);     /* Retains subtle hover "floating" lift effect */
 }
 
 /* Style the phone icon red to match your brand style rules */
 .phone-icon-red {
-    color: #cc2a2a; /* Clean solid red tint */
+    color: #9C1A14; /* Clean solid red tint */
     filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
     display: inline-block;
 }
@@ -410,14 +421,19 @@ body {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 14px 45px;
-    font-weight: 700;
-    border-radius: 25px;
+    background-color: #ffffff;       /* Changed from blue to crisp white */
+    color: var(--primary-color);     /* Changed from white text to brand blue */
+    border: 5px solid #9C1A14;       /* Thick red frame matching opening hours thickness */
+    padding: 12px 45px;              /* Trimmed slightly from 14px to balance out the 5px border thickness[cite: 2] */
+    font-weight: 700;                /* Keeps the text crisp and heavily bolded */
+    border-radius: 25px;             /* Retains the rounded pill shape */
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;       /* Expanded from 'background' to smoothly transition colors on hover */
+}
+
+.btn-submit:hover {
+    background-color: #9C1A14;       /* Fills the button with logo red on hover */
+    color: #ffffff;                  /* Flips the text to white so it remains clear and readable */
 }
 
 /* --- Footer --- */
