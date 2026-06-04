@@ -583,37 +583,3 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-
-.servicing-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: var(--text-dark);
-    font-family: var(--font-stack); /* Ensures consistency */
-}
-
-.servicing-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: var(--text-dark);
-    font-family: var(--font-stack); /* Ensures consistency */
-}
-
-.servicing-section p {
-    font-family: var(--font-stack); /* Ensures consistent body text */
-}
-
-.cf-turnstile {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.reviews-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: var(--text-dark);
-    font-family: var(--font-stack);
-}
