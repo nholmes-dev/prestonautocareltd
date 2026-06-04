@@ -669,7 +669,7 @@ body {
     width: 42px;
     height: 42px;
     background-color: transparent;  /* Lets the brand blue footer show through */
-    border: 2px solid #9C1A14;      /* Brand red border */
+    border: 3px solid #9C1A14;      /* Brand red border */
     color: #ffffff;                 /* Pure white icon/text color */
     border-radius: 6px;             /* Matches form's soft corner accent */
     text-decoration: none;
