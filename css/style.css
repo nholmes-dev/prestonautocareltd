@@ -583,10 +583,3 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-
-/* Attempt to target and hide the Elfsight branding elements */
-div[class*="WidgetBackground__Content"] a,
-[class*="elfsight-app"] a[href*="elfsight.com"],
-.eapps-link {
-    display: none !important;
-}
