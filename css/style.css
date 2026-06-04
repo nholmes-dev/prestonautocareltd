@@ -24,6 +24,15 @@ body {
     background-color: #ffffff;
 }
 
+.services-overview h2,
+.mot-section h2,
+.servicing-section h2 {
+    border-left: 5px solid #9C1A14;  /* Matches the red branding thickness */
+    padding-left: 15px;              /* Gives the text breathing room from the bar */
+    line-height: 1.1;                /* Locks the bar height perfectly to the 2rem text size */
+    display: block;                  /* Ensures the border spans the full height of the text block */
+}
+
 /* --- Header --- */
 .site-header {
     background: #ffffff;
