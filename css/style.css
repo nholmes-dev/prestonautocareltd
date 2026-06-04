@@ -28,26 +28,23 @@ body {
 .services-overview h2,
 .mot-section h2,
 .servicing-section h2 {
-    display: inline-flex;            /* Align dots and text perfectly on a single line */
-    align-items: center;             /* Vertically centers the dots with the letters */
+    display: inline-flex;            /* Align dot and text perfectly on a single line */
+    align-items: center;             /* Vertically centers the dot with the letters */
     width: fit-content;              
     line-height: 1.1;
 }
 
-/* Creates the dots */
-.services-overview h2::before, .services-overview h2::after,
-.mot-section h2::before, .mot-section h2::after,
-.servicing-section h2::before, .servicing-section h2::after {
+/* 👈 CHANGED: Creates exactly one red dot on the left side only */
+.services-overview h2::before,
+.mot-section h2::before,
+.servicing-section h2::before {
     content: '';
-    width: 8px;                      /* Size of the dot */
+    width: 8px;                      
     height: 8px;
-    background-color: #9C1A14;       /* Brand red */
-    border-radius: 50%;              /* Makes it a perfect circle */
+    background-color: #9C1A14;       
+    border-radius: 50%;              
+    margin-right: 12px;              /* Pushes text away from the left dot */
 }
-
-/* Spaces the dots out from the text wrapper */
-.services-overview h2::before, .mot-section h2::before, .servicing-section h2::before { margin-right: 12px; }
-.services-overview h2::after, .mot-section h2::after, .servicing-section h2::after { margin-left: 12px; }
 
 /* --- Centered Section Heading Accents (Reviews & Contact) --- */
 .reviews-section h2,
@@ -56,9 +53,9 @@ body {
     align-items: center;             
     width: fit-content;              
     line-height: 1.1;
-    /* Centering is naturally handled by the parent container's text-align: center */
 }
 
+/* 👈 KEPT: Preserves one red dot on either side for centered headings */
 .reviews-section h2::before, .reviews-section h2::after,
 .contact-section h2::before, .contact-section h2::after {
     content: '';
@@ -71,29 +68,20 @@ body {
 .reviews-section h2::before, .contact-section h2::before { margin-right: 12px; }
 .reviews-section h2::after, .contact-section h2::after { margin-left: 12px; }
 
+/* 👈 CHANGED: Swapped out dots for a clean, solid left brand line */
 .footer-info h3 {
-    font-size: 1.1rem;[cite: 1]
-    text-transform: uppercase;[cite: 1]
-    letter-spacing: 1px;[cite: 1]
-    margin-bottom: 15px;[cite: 1]
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
     margin-top: 45px;                 
-    color: #ffffff;[cite: 1]
-    display: inline-flex;            
-    align-items: center;             
+    color: #ffffff;
+    display: block;
     width: fit-content;               
+    border-left: 4px solid #9C1A14;   /* One clean red line */
+    padding-left: 10px;               
     line-height: 1;                   
 }
-
-.footer-info h3::before, .footer-info h3::after {
-    content: '';
-    width: 6px;                      /* Slightly scaled down for footer titles */
-    height: 6px;
-    background-color: #9C1A14;
-    border-radius: 50%;
-}
-
-.footer-info h3::before { margin-right: 10px; }
-.footer-info h3::after { margin-left: 10px; }
 
 /* --- Header --- */
 .site-header {
@@ -109,13 +97,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;      /* Center the items horizontally */
+    flex-direction: column;  
+    align-items: center;      
     gap: 0;                   
 }
 
 .logo img {
-    height: 165px;            /* Scaled 3x larger from the original 55px */
+    height: 165px;            
     width: auto;
     display: block;
     margin: 0 auto;           
@@ -567,22 +555,6 @@ body {
     gap: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 40px;
-}
-
-.footer-info h3 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    margin-top: 45px;                 
-    color: #ffffff;                   
-    display: block;
-    width: fit-content;               /* 👈 NEW: Shrinks wrapper to fit the footer text */
-    border-left: 4px dotted #9C1A14;   
-    border-right: 4px dotted #9C1A14;  /* 👈 NEW: Adds the right-side branding bar */
-    padding-left: 10px;               
-    padding-right: 10px;              /* 👈 NEW: Balances the spacing on the right side */
-    line-height: 1;                   
 }
 
 .footer-info h3:first-child {
