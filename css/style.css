@@ -30,8 +30,8 @@ body {
 .servicing-section h2 {
     display: block;
     width: fit-content;              /* 👈 Hugs the text so the right bar sits next to the last letter */
-    border-left: 5px solid #9C1A14;
-    border-right: 5px solid #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
+    border-left: 5px dotted #9C1A14;
+    border-right: 5px dotted #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
     padding-left: 15px;
     padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
     line-height: 1.1;
@@ -44,8 +44,8 @@ body {
     width: fit-content;              
     margin-left: auto;               
     margin-right: auto;              
-    border-left: 5px solid #9C1A14;
-    border-right: 5px solid #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
+    border-left: 5px dotted #9C1A14;
+    border-right: 5px dotted #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
     padding-left: 15px;
     padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
     line-height: 1.1;
@@ -534,8 +534,8 @@ body {
     color: #ffffff;                   
     display: block;
     width: fit-content;               /* 👈 NEW: Shrinks wrapper to fit the footer text */
-    border-left: 4px solid #9C1A14;   
-    border-right: 4px solid #9C1A14;  /* 👈 NEW: Adds the right-side branding bar */
+    border-left: 4px dotted #9C1A14;   
+    border-right: 4px dotted #9C1A14;  /* 👈 NEW: Adds the right-side branding bar */
     padding-left: 10px;               
     padding-right: 10px;              /* 👈 NEW: Balances the spacing on the right side */
     line-height: 1;                   
