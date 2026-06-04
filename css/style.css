@@ -1,6 +1,6 @@
 /* --- Global Resets & Variables --- */
 :root {
-    --primary-color: #2A556C; /* Replaced orange with custom tone */
+    --primary-color: #2A556C;
     --text-dark: #2A556C;
     --text-muted: #555555;
     --bg-light: #f9f9f9;
@@ -51,12 +51,12 @@ body {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: #ffffff;     /* 👈 CHANGED: White background */
-    border: 3px solid #9C1A14;     /* 👈 CHANGED: 3px brand red border */
-    color: var(--primary-color);   /* 👈 CHANGED: Brand blue icon color */
-    border-radius: 6px;            /* Soft corner accent matching form elements */
+    background-color: #ffffff;
+    border: 3px solid #9C1A14;
+    color: var(--primary-color);
+    border-radius: 6px;
     text-decoration: none;
-    box-sizing: border-box;        /* Ensures border doesn't alter the 44px sizing */
+    box-sizing: border-box;
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -67,9 +67,9 @@ body {
 
 /* Smooth hover interaction */
 .contact-box:hover {
-    background-color: #9C1A14;     /* Fills box with red */
+    background-color: #9C1A14;
     border-color: #9C1A14;
-    color: #ffffff;                /* Flips icon color to white */
+    color: #ffffff;
     transform: scale(1.05);
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .logo img {
-    height: 165px;            /* Scaled 3x larger from the original 55px */
+    height: 165px;
     width: auto;
     display: block;
     margin: 0 auto;           
@@ -182,7 +182,7 @@ body {
     letter-spacing: 0.5px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;         /* 👈 CHANGED: Keeps text perfectly centered now that icon is gone */
+    justify-content: center;
     transition: all 0.3s ease;       
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 .phone-icon-red {
-    display: none;                   /* 👈 CHANGED: Removes the phone icon from view entirely */
+    display: none;
 }
 
 /* --- Info & Opening Hours Section --- */
@@ -306,7 +306,7 @@ body {
     align-items: center;
 }
 
-/* --- Gallery & Values Section --- */
+/* --- Values Section --- */
 .gallery-text-section {
     padding: 80px 20px;
     background-color: #ffffff; 
@@ -353,7 +353,7 @@ body {
 
 .servicing-section h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 5px;
     color: var(--text-dark);
 }
