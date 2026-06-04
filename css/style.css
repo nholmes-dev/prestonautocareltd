@@ -494,7 +494,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 40px;
-    border-bottom: 2px solid #9C1A14;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding-bottom: 40px;
 }
 
@@ -504,7 +504,10 @@ body {
     letter-spacing: 1px;
     margin-bottom: 15px;
     margin-top: 20px;
-    color: #9C1A14;
+    color: #ffffff;                   /* 🔴 Back to crisp white for perfect readability */
+    border-left: 4px solid #9C1A14;   /* 🔥 NEW: Adds a clean vertical red brand bar to the left */
+    padding-left: 10px;               /* 🔥 NEW: Creates space between the red bar and the text */
+    line-height: 1;                   /* 🔥 NEW: Ensures the bar matches the text height perfectly */
 }
 
 .footer-info h3:first-child {
@@ -543,7 +546,7 @@ body {
 }
 
 .footer-bottom a {
-    color: #9C1A14;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease;
