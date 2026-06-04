@@ -51,11 +51,13 @@ body {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: #9C1A14; /* Brand red square */
-    color: #ffffff;            /* White icon color */
-    border-radius: 6px;        /* Soft corner accent matching form inputs */
+    background-color: #ffffff;     /* 👈 CHANGED: White background */
+    border: 2px solid #9C1A14;     /* 👈 CHANGED: 2px brand red border */
+    color: var(--primary-color);   /* 👈 CHANGED: Brand blue icon color */
+    border-radius: 6px;            /* Soft corner accent matching form elements */
     text-decoration: none;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-sizing: border-box;        /* Ensures border doesn't alter the 44px sizing */
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .contact-box svg {
@@ -65,7 +67,9 @@ body {
 
 /* Smooth hover interaction */
 .contact-box:hover {
-    background-color: var(--primary-color); /* Flips to brand dark blue */
+    background-color: #9C1A14;     /* Fills box with red */
+    border-color: #9C1A14;
+    color: #ffffff;                /* Flips icon color to white */
     transform: scale(1.05);
 }
 
