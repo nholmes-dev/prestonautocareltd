@@ -28,28 +28,72 @@ body {
 .services-overview h2,
 .mot-section h2,
 .servicing-section h2 {
-    display: block;
-    width: fit-content;              /* 👈 Hugs the text so the right bar sits next to the last letter */
-    border-left: 5px dotted #9C1A14;
-    border-right: 5px dotted #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
-    padding-left: 15px;
-    padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
+    display: inline-flex;            /* Align dots and text perfectly on a single line */
+    align-items: center;             /* Vertically centers the dots with the letters */
+    width: fit-content;              
     line-height: 1.1;
 }
+
+/* Creates the dots */
+.services-overview h2::before, .services-overview h2::after,
+.mot-section h2::before, .mot-section h2::after,
+.servicing-section h2::before, .servicing-section h2::after {
+    content: '';
+    width: 8px;                      /* Size of the dot */
+    height: 8px;
+    background-color: #9C1A14;       /* Brand red */
+    border-radius: 50%;              /* Makes it a perfect circle */
+}
+
+/* Spaces the dots out from the text wrapper */
+.services-overview h2::before, .mot-section h2::before, .servicing-section h2::before { margin-right: 12px; }
+.services-overview h2::after, .mot-section h2::after, .servicing-section h2::after { margin-left: 12px; }
 
 /* --- Centered Section Heading Accents (Reviews & Contact) --- */
 .reviews-section h2,
 .contact-section h2 {
-    display: block;
+    display: inline-flex;            
+    align-items: center;             
     width: fit-content;              
-    margin-left: auto;               
-    margin-right: auto;              
-    border-left: 5px dotted #9C1A14;
-    border-right: 5px dotted #9C1A14; /* 👈 NEW: Adds the right-side branding bar */
-    padding-left: 15px;
-    padding-right: 15px;             /* 👈 NEW: Balances the spacing on the right side */
     line-height: 1.1;
+    /* Centering is naturally handled by the parent container's text-align: center */
 }
+
+.reviews-section h2::before, .reviews-section h2::after,
+.contact-section h2::before, .contact-section h2::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #9C1A14;
+    border-radius: 50%;
+}
+
+.reviews-section h2::before, .contact-section h2::before { margin-right: 12px; }
+.reviews-section h2::after, .contact-section h2::after { margin-left: 12px; }
+
+.footer-info h3 {
+    font-size: 1.1rem;[cite: 1]
+    text-transform: uppercase;[cite: 1]
+    letter-spacing: 1px;[cite: 1]
+    margin-bottom: 15px;[cite: 1]
+    margin-top: 45px;                 
+    color: #ffffff;[cite: 1]
+    display: inline-flex;            
+    align-items: center;             
+    width: fit-content;               
+    line-height: 1;                   
+}
+
+.footer-info h3::before, .footer-info h3::after {
+    content: '';
+    width: 6px;                      /* Slightly scaled down for footer titles */
+    height: 6px;
+    background-color: #9C1A14;
+    border-radius: 50%;
+}
+
+.footer-info h3::before { margin-right: 10px; }
+.footer-info h3::after { margin-left: 10px; }
 
 /* --- Header --- */
 .site-header {
