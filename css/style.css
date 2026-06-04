@@ -438,59 +438,76 @@ body {
 
 /* --- Footer --- */
 .site-footer {
-    background-color: #0b0c10;
+    background-color: var(--primary-color); /* Changed from #0b0c10 to brand blue */
     color: #ffffff;
     padding: 60px 20px 20px 20px;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    border-bottom: 1px solid #222222;
-    padding-bottom: 40px;
+    max-width: 1200px;[cite: 2]
+    margin: 0 auto;[cite: 2]
+    display: grid;[cite: 2]
+    grid-template-columns: 1fr 1fr;[cite: 2]
+    gap: 40px;[cite: 2]
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Changed from dark gray to a clean semi-transparent white line*/
+    padding-bottom: 40px;[cite: 2]
 }
 
 .footer-info h3 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    color: #ffffff;
+    font-size: 1.1rem;[cite: 2]
+    text-transform: uppercase;[cite: 2]
+    letter-spacing: 1px;[cite: 2]
+    margin-bottom: 15px;[cite: 2]
+    margin-top: 20px;[cite: 2]
+    color: #ffffff;[cite: 2]
 }
 
 .footer-info h3:first-child {
-    margin-top: 0;
+    margin-top: 0;[cite: 2]
 }
 
 .footer-info address {
-    font-style: normal;
-    color: #aaaaaa;
-    line-height: 1.8;
+    font-style: normal;[cite: 2]
+    color: #f0f0f0; /* Lightened slightly from #aaaaaa for perfect legibility on blue*/
+    line-height: 1.8;[cite: 2]
 }
 
 .footer-info p {
-    color: #aaaaaa;
-    margin-bottom: 8px;
+    color: #f0f0f0; /* Lightened slightly from #aaaaaa */
+    margin-bottom: 8px;[cite: 2]
 }
 
 .footer-info a {
-    color: var(--primary-color);
-    text-decoration: none;
+    color: #ffffff; /* Changed from brand blue to white so it doesn't blend in */
+    text-decoration: underline; /* Adds an underline so users know it is an interactive link*/
+}
+
+.footer-info a:hover {
+    color: #e0e0e0; /* Subtle color shift when hovering over email or phone links */
 }
 
 .footer-map iframe {
-    border-radius: 6px;
+    border-radius: 6px;[cite: 2]
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    color: #666666;
-    font-size: 0.85rem;
+    text-align: center;[cite: 2]
+    padding-top: 20px;[cite: 2]
+    color: rgba(255, 255, 255, 0.6); /* Changed from #666666 to soft white text */
+    font-size: 0.85rem;[cite: 2]
+}
+
+/* --- Footer Backlink Styling --- */
+.footer-bottom a {
+    color: #ffffff; /* Changed from brand blue to white for perfect visibility */
+    text-decoration: none;[cite: 2]
+    font-weight: 600;[cite: 2]
+    transition: color 0.2s ease;[cite: 2]
+}
+
+.footer-bottom a:hover {
+    color: #e0e0e0;[cite: 2]
+    text-decoration: underline;[cite: 2]
 }
 
 /* --- Responsive Media Queries --- */
