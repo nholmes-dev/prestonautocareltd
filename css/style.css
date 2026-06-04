@@ -52,7 +52,7 @@ body {
     width: 44px;
     height: 44px;
     background-color: #ffffff;     /* 👈 CHANGED: White background */
-    border: 2px solid #9C1A14;     /* 👈 CHANGED: 2px brand red border */
+    border: 3px solid #9C1A14;     /* 👈 CHANGED: 3px brand red border */
     color: var(--primary-color);   /* 👈 CHANGED: Brand blue icon color */
     border-radius: 6px;            /* Soft corner accent matching form elements */
     text-decoration: none;
