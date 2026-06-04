@@ -241,30 +241,59 @@ At Preston Autocare, we guarantee fast and reliable repair for your car – usin
         <p><strong>Phone:</strong> <a href="tel:01274966496">01274 966496</a></p>
     </div>
 
-    <div class="footer-contact-boxes">
-        <a href="tel:01274966496" class="footer-box" title="Call Preston Autocare">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-        </a>
-
-        <a href="mailto:preston.autocare19@gmail.com" class="footer-box" title="Email Preston Autocare">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-            </svg>
-        </a>
-    </div>
-</div>
+<footer class="site-footer">
+        <div class="footer-container">
             
+            <!-- COLUMN 1: LEFT SIDE (INFO & CONTACTS) -->
+            <div class="footer-info">
+                <h3>Address</h3>
+                <address>
+                    Preston Autocare Ltd<br>
+                    53 Wrose Road,<br>
+                    Shipley,<br>
+                    BD18 1HU
+                </address>
+
+                <h3>Contact</h3>
+                <div class="footer-contact-container">
+                    <div class="footer-contact-text">
+                        <p><strong>Email:</strong> <a href="mailto:preston.autocare19@gmail.com">preston.autocare19@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:01274966496">01274 966496</a></p>
+                    </div>
+
+                    <div class="footer-contact-boxes">
+                        <!-- Phone Box -->
+                        <a href="tel:01274966496" class="footer-box" title="Call Preston Autocare">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Email Box -->
+                        <a href="mailto:preston.autocare19@gmail.com" class="footer-box" title="Email Preston Autocare">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- 👈 Closes Left Column -->
+
+            <!-- RIGHT SIDE (MAP) -->
             <div class="footer-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.7773077687752!2d-1.7614621230088934!3d53.82903743849754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be3f46eeab083%3A0xdb24892dcdbbcc7c!2spreston%20autocare%20ltd!5e0!3m2!1sen!2suk!4v1780491046645!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+            </div> <!-- 👈 Closes Right Column -->
+
+        </div> <!-- 👈 Closes the Grid Layout -->
+
+        <!-- FULL WIDTH BOTTOM STRIP -->
         <div class="footer-bottom">
-        <p>&copy; Created by <a href="https://www.nhwebdesign.co.uk/" target="_blank" rel="noopener">NH Web Design</a></p>
+            <p>&copy; Created by <a href="https://www.nhwebdesign.co.uk/" target="_blank" rel="noopener">NH Web Design</a></p>
         </div>
     </footer>
+
+    <!-- MOT Redirect Script -->
     <script>
     function redirectToMOT(event) {
         event.preventDefault();
