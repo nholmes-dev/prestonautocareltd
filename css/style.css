@@ -34,13 +34,61 @@ body {
     z-index: 1000;
 }
 
+/* --- Header Contact Shortcut Boxes --- */
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.header-contact-boxes {
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;      /* Center the items horizontally */
-    gap: 0;                   
+    gap: 12px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;     /* 👈 CHANGED: White background */
+    border: 3px solid #9C1A14;     /* 👈 CHANGED: 3px brand red border */
+    color: var(--primary-color);   /* 👈 CHANGED: Brand blue icon color */
+    border-radius: 6px;            /* Soft corner accent matching form elements */
+    text-decoration: none;
+    box-sizing: border-box;        /* Ensures border doesn't alter the 44px sizing */
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Smooth hover interaction */
+.contact-box:hover {
+    background-color: #9C1A14;     /* Fills box with red */
+    border-color: #9C1A14;
+    color: #ffffff;                /* Flips icon color to white */
+    transform: scale(1.05);
+}
+
+/* Desktop Display Behavior */
+@media (min-width: 769px) {
+    .header-contact-boxes {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+    /* Mobile Display Behavior */
+@media (max-width: 768px) {
+    .header-contact-boxes {
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 .logo img {
@@ -596,5 +644,57 @@ body {
 
     .contact-form {
         padding: 20px;          
+    }
+}
+/* --- Footer Contact Layout & Boxes --- */
+.footer-contact-container {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 10px;
+}
+
+.footer-contact-text p {
+    margin-bottom: 4px;
+}
+
+.footer-contact-boxes {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;  /* Lets the brand blue footer show through */
+    border: 3px solid #9C1A14;      /* Brand red border */
+    color: #ffffff;                 /* Pure white icon/text color */
+    border-radius: 6px;             /* Matches form's soft corner accent */
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-box svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Inverts elegantly on hover over the dark blue background */
+.footer-box:hover {
+    background-color: #9C1A14;      /* Fills box solid red */
+    border-color: #9C1A14;
+    transform: scale(1.05);         /* Subtle interactive pop */
+}
+
+/* --- Mobile Responsiveness for Footer Layout --- */
+@media (max-width: 600px) {
+    .footer-contact-container {
+        flex-direction: column;     /* Stacks the text and buttons vertically on mobile */
+        align-items: flex-start;    /* Keeps everything neatly left-aligned */
+        gap: 15px;
     }
 }
