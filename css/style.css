@@ -514,7 +514,6 @@ body {
     
     .hero-content h1 {
         font-size: 1.8rem;
-    }
 }
 
 /* --- Footer Backlink Styling --- */
@@ -529,6 +528,7 @@ body {
     color: #ffffff;              /* Turns crisp white when a user hovers over it */
     text-decoration: underline;  /* Adds the underline back only on hover */
 }
+
 /* MOT Checker Container */
 .mot-checker-container {
     margin: 40px auto;
