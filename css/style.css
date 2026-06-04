@@ -199,18 +199,21 @@ body {
 
 /* Hours Box Customizations */
 .hours-box {
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: #ffffff;      /* Changed from blue to crisp white */
+    color: var(--primary-color);    /* Changed from white text to brand blue */
+    border: 3px solid #9C1A14;      /* Thick red logo border matching the contact box */
     padding: 35px;
     border-radius: 8px;
     height: fit-content;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Adds a subtle shadow to help it lift off the page background */
 }
 
 .hours-box h3 {
     font-size: 1.5rem;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(42, 85, 108, 0.2); /* Changed from a white line to a soft brand-blue line */
     padding-bottom: 10px;
+    color: var(--primary-color);    /* Ensures the header matches the brand blue */
 }
 
 .hours-table {
@@ -220,13 +223,8 @@ body {
 
 .hours-table td {
     padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(42, 85, 108, 0.15); /* Changed from a white line to a soft brand-blue divider line */
     font-size: 0.95rem;
-}
-
-.text-right {
-    text-align: right;
-    font-weight: 600;
 }
 
 /* --- MOT Section --- */
