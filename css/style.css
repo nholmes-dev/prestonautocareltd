@@ -30,7 +30,7 @@ body {
     padding: 25px 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
-    top: 0;
+    top: 1px;
     z-index: 1000;
 }
 
@@ -40,14 +40,14 @@ body {
     display: flex;
     flex-direction: column;  /* Stack items vertically */
     align-items: center;      /* Center the items horizontally */
-    gap: 0;                   /* Reduced to zero since the phone button is moved down */
+    gap: 0;                   
 }
 
 .logo img {
     height: 165px;            /* Scaled 3x larger from the original 55px */
     width: auto;
     display: block;
-    margin: 0 auto;           /* Secondary alignment insurance */
+    margin: 0 auto;           
 }
 
 .phone-btn {
@@ -125,28 +125,27 @@ body {
 
 /* --- Hero Phone Button Styles --- */
 .btn-primary.hero-phone-btn {
-    background-color: #ffffff;       /* Changed from blue to crisp white */
-    color: var(--primary-color);     /* Changed from white text to brand blue */
-    border: 5px solid #9C1A14;       /* Thick red frame matching your opening hours thickness */
-    padding: 11px 35px;              /* Balanced down slightly from 14px to account for the 5px border */
-    font-size: 1.1rem;               /* Retains original text size */
-    font-weight: 700;                /* Retains bold weight */
+    background-color: #ffffff;       
+    color: var(--primary-color);     
+    border: 5px solid #9C1A14;       
+    padding: 11px 35px;              
+    font-size: 1.1rem;               
+    font-weight: 700;                
     letter-spacing: 0.5px;
     display: inline-flex;
     align-items: center;
-    gap: 10px;                       /* Spaces out the phone icon from the numbers*/
-    transition: all 0.3s ease;       /* Ensures background, color, and float transition smoothly together */
+    gap: 10px;                       
+    transition: all 0.3s ease;       
 }
 
 .btn-primary.hero-phone-btn:hover {
-    background-color: #9C1A14;       /* Fills the button with logo red on hover */
-    color: #ffffff;                  /* Flips the text to crisp white so it stays readable */
-    transform: translateY(-2px);     /* Retains subtle hover "floating" lift effect */
+    background-color: #9C1A14;       
+    color: #ffffff;                  
+    transform: translateY(-2px);     
 }
 
-/* Style the phone icon red to match your brand style rules */
 .phone-icon-red {
-    color: #9C1A14; /* Clean solid red tint */
+    color: #9C1A14; 
     filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
     display: inline-block;
 }
@@ -210,22 +209,22 @@ body {
 
 /* --- Hours Box Customizations --- */
 .hours-box {
-    background-color: #ffffff;      /* Changed from blue to crisp white */
-    color: var(--primary-color);    /* Changed from white text to brand blue */
-    border: 7px solid #9C1A14;      /* Thick red logo border matching the contact box */
+    background-color: #ffffff;      
+    color: var(--primary-color);    
+    border: 7px solid #9C1A14;      
     padding: 35px;
     border-radius: 8px;
     height: fit-content;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Adds a subtle shadow to help it lift off the page background */
-    font-weight: 600; /*Bold text to match logo */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+    font-weight: 600; 
 }
 
 .hours-box h3 {
     font-size: 1.5rem;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgba(42, 85, 108, 0.2); /* Changed from a white line to a soft brand-blue line */
+    border-bottom: 1px solid rgba(42, 85, 108, 0.2); 
     padding-bottom: 10px;
-    color: var(--primary-color);    /* Ensures the header matches the brand blue */
+    color: var(--primary-color);    
 }
 
 .hours-table {
@@ -235,7 +234,7 @@ body {
 
 .hours-table td {
     padding: 12px 0;
-    border-bottom: 1px solid rgba(42, 85, 108, 0.15); /* Changed from a white line to a soft brand-blue divider line */
+    border-bottom: 1px solid rgba(42, 85, 108, 0.15); 
     font-size: 0.95rem;
 }
 
@@ -261,24 +260,10 @@ body {
     align-items: center;
 }
 
-/* Override the previous margin for the checker so it aligns with the text block */
-.mot-checker-container {
-    margin: 20px 0 0 0;
-    text-align: left;
-}
-
-/* Ensure responsiveness for the MOT section */
-@media (max-width: 992px) {
-    .mot-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
 /* --- Gallery & Values Section --- */
 .gallery-text-section {
     padding: 80px 20px;
-    background-color: #ffffff; /* Seamless white backdrop */
+    background-color: #ffffff; 
 }
 
 .gallery-text-container {
@@ -308,7 +293,7 @@ body {
 /* --- Routine Servicing Section --- */
 .servicing-section {
     padding: 80px 20px;
-    background-color: #ffffff; /* Kept white to match your background requirements exactly */
+    background-color: #ffffff; 
 }
 
 .servicing-container {
@@ -330,11 +315,10 @@ body {
 .sub-headline {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color); /* Ties in your custom primary blue accent tone */
+    color: var(--primary-color); 
     margin-bottom: 20px;
 }
 
-/* Showcase Component Shared styles */
 .single-image-showcase img {
     width: 100%;
     height: auto;
@@ -342,6 +326,14 @@ body {
     border-radius: 6px; 
     display: block;
     box-shadow: 0 4px 15px rgba(0,0,0,0.04); 
+}
+
+/* --- Reviews Section Title --- */
+.reviews-section h2 {
+    color: var(--primary-color);    
+    font-size: 2rem;                
+    margin-bottom: 25px;            
+    font-weight: 700;               
 }
 
 /* --- Contact Section --- */
@@ -421,194 +413,25 @@ body {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    background-color: #ffffff;       /* Changed from blue to crisp white */
-    color: var(--primary-color);     /* Changed from white text to brand blue */
-    border: 5px solid #9C1A14;       /* Thick red frame matching opening hours thickness */
-    padding: 12px 45px;              /* Trimmed slightly from 14px to balance out the 5px border thickness[cite: 2] */
-    font-weight: 700;                /* Keeps the text crisp and heavily bolded */
-    border-radius: 25px;             /* Retains the rounded pill shape */
+    background-color: #ffffff;       
+    color: var(--primary-color);     
+    border: 5px solid #9C1A14;       
+    padding: 12px 45px;              
+    font-weight: 700;                
+    border-radius: 25px;             
     cursor: pointer;
-    transition: all 0.3s ease;       /* Expanded from 'background' to smoothly transition colors on hover */
+    transition: all 0.3s ease;       
 }
 
 .btn-submit:hover {
-    background-color: #9C1A14;       /* Fills the button with logo red on hover */
-    color: #ffffff;                  /* Flips the text to white so it remains clear and readable */
+    background-color: #9C1A14;       
+    color: #ffffff;                  
 }
 
-/* --- Footer --- */
-.site-footer {
-    background-color: var(--primary-color); /* Matches your brand blue */
-    color: #ffffff;[cite: 2]
-    padding: 60px 20px 20px 20px;[cite: 2]
-}
-
-.footer-container {
-    max-width: 1200px;[cite: 2]
-    margin: 0 auto;             /* Centers the footer container on desktop */
-    display: grid;[cite: 2]
-    grid-template-columns: 1fr 1fr; /* Side-by-side columns on desktop*/
-    gap: 40px;[cite: 2]
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Soft white divider line */
-    padding-bottom: 40px;[cite: 2]
-}
-
-.footer-info h3 {
-    font-size: 1.1rem;[cite: 2]
-    text-transform: uppercase;[cite: 2]
-    letter-spacing: 1px;[cite: 2]
-    margin-bottom: 15px;[cite: 2]
-    margin-top: 20px;[cite: 2]
-    color: #ffffff;[cite: 2]
-}
-
-.footer-info h3:first-child {
-    margin-top: 0;[cite: 2]
-}
-
-.footer-info address {
-    font-style: normal;[cite: 2]
-    color: #f0f0f0;             /* Crisp off-white for excellent readability */
-    line-height: 1.8;[cite: 2]
-}
-
-.footer-info p {
-    color: #f0f0f0;[cite: 2]
-    margin-bottom: 8px;[cite: 2]
-}
-
-.footer-info a {
-    color: #ffffff;             /* White links so they stand out */
-    text-decoration: underline;  /* Keeps links distinctly interactive */
-}
-
-.footer-info a:hover {
-    color: #e0e0e0;[cite: 2]
-}
-
-.footer-map iframe {
-    border-radius: 6px;[cite: 2]
-}
-
-.footer-bottom {
-    text-align: center;[cite: 2]
-    padding-top: 20px;[cite: 2]
-    color: rgba(255, 255, 255, 0.6);[cite: 2]
-    font-size: 0.85rem;[cite: 2]
-}
-
-/* --- Footer Backlink Styling --- */
-.footer-bottom a {
-    color: #ffffff;[cite: 2]
-    text-decoration: none;[cite: 2]
-    font-weight: 600;[cite: 2]
-    transition: color 0.2s ease;[cite: 2]
-}
-
-.footer-bottom a:hover {
-    color: #e0e0e0;[cite: 2]
-    text-decoration: underline;[cite: 2]
-}
-
-/* --- Responsive Media Queries --- */
-@media (max-width: 992px) {
-    .info-container,
-    .gallery-text-container,
-    .servicing-container,  
-    .footer-container {
-        grid-template-columns: 1fr; /* Smoothly stacks the text and map on tablets/screens under 992px */
-        gap: 40px;[cite: 2]
-    }
-    
-    .hero-content h1 {
-        font-size: 2.3rem;[cite: 2]
-    }
-}
-
-@media (max-width: 600px) {
-    .header-container {
-        flex-direction: column;[cite: 2]
-        gap: 15px;[cite: 2]
-    }
-
-    .logo img {
-        height: 110px;[cite: 2]
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;[cite: 2]
-    }
-    
-    .form-row {
-        flex-direction: column;[cite: 2]
-        gap: 15px;[cite: 2]
-    }
-    
-    .hero-content h1 {
-        font-size: 1.8rem;[cite: 2]
-    }
-
-    .contact-form {
-        padding: 20px;          /* Ensures custom contact frame looks great on mobile screen widths */
-    }
-}
-
-/* --- Responsive Media Queries --- */
-@media (max-width: 992px) {
-    .info-container,
-    .gallery-text-container,
-    .servicing-container,  /* Forces the layout columns to drop cleanly vertically on tablet viewports */
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.3rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .logo img {
-        height: 110px;        /* Responsively scale down the large logo on compact screens */
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .hero-content h1 {
-        font-size: 1.8rem;
-}
-}
-
-/* --- Footer Backlink Styling --- */
-.footer-bottom a {
-    color: var(--primary-color); /* Uses my signature blue accent color */
-    text-decoration: none;       /* Removes the default underline */
-    font-weight: 600;            /* Gives it a clean weight adjustment */
-    transition: color 0.2s ease;
-}
-
-.footer-bottom a:hover {
-    color: #ffffff;              /* Turns crisp white when a user hovers over it */
-    text-decoration: underline;  /* Adds the underline back only on hover */
-}
-
-/* MOT Checker Container */
+/* --- MOT Checker Container --- */
 .mot-checker-container {
-    margin: 40px auto;
-    text-align: center;
+    margin: 20px 0 0 0;
+    text-align: left;
     max-width: 400px;
 }
 
@@ -618,10 +441,9 @@ body {
     font-weight: 600;
 }
 
-/* The Number Plate Styling */
 .number-plate {
     display: inline-flex;
-    background-color: #f7d54b; /* Classic yellow plate color */
+    background-color: #f7d54b; 
     border: 2px solid #000;
     border-radius: 4px;
     overflow: hidden;
@@ -644,7 +466,7 @@ body {
     padding: 5px 10px;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-family: var(--font-stack); /* CHANGED FROM sans-serif TO var(--font-stack) */
+    font-family: var(--font-stack); 
     letter-spacing: 2px;
     width: 150px;
     outline: none;
@@ -659,9 +481,119 @@ body {
     font-weight: bold;
 }
 
-.reviews-section h2 {
-    color: var(--primary-color);    /* Turns the text into your brand blue */
-    font-size: 2rem;                /* Matches the heading size of the other sections */
-    margin-bottom: 25px;            /* Adds a clean gap between the text and the widget */
-    font-weight: 700;               /* Keeps it looking bold and professional */
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--primary-color); 
+    color: #ffffff;
+    padding: 60px 20px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;             
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    padding-bottom: 40px;
+}
+
+.footer-info h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.footer-info h3:first-child {
+    margin-top: 0;
+}
+
+.footer-info address {
+    font-style: normal;
+    color: #f0f0f0;             
+    line-height: 1.8;
+}
+
+.footer-info p {
+    color: #f0f0f0;
+    margin-bottom: 8px;
+}
+
+.footer-info a {
+    color: #ffffff;             
+    text-decoration: underline;  
+}
+
+.footer-info a:hover {
+    color: #e0e0e0;
+}
+
+.footer-map iframe {
+    border-radius: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-bottom a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+/* --- Responsive Media Queries (Cleanly Combined at the Bottom) --- */
+@media (max-width: 992px) {
+    .info-container,
+    .gallery-text-container,
+    .servicing-container,  
+    .mot-container,
+    .footer-container {
+        grid-template-columns: 1fr; 
+        gap: 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 110px;        
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 20px;          
+    }
 }
