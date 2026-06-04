@@ -494,7 +494,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: 2px solid #9C1A14;
     padding-bottom: 40px;
 }
 
@@ -504,7 +504,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 15px;
     margin-top: 20px;
-    color: #ffffff;
+    color: #9C1A14;
 }
 
 .footer-info h3:first-child {
@@ -543,14 +543,14 @@ body {
 }
 
 .footer-bottom a {
-    color: #ffffff;
+    color: #9C1A14;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 .footer-bottom a:hover {
-    color: #e0e0e0;
+    color: #ffffff;
     text-decoration: underline;
 }
 
