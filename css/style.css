@@ -34,13 +34,57 @@ body {
     z-index: 1000;
 }
 
+/* --- Header Contact Shortcut Boxes --- */
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.header-contact-boxes {
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;      /* Center the items horizontally */
-    gap: 0;                   
+    gap: 12px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #9C1A14; /* Brand red square */
+    color: #ffffff;            /* White icon color */
+    border-radius: 6px;        /* Soft corner accent matching form inputs */
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-box svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Smooth hover interaction */
+.contact-box:hover {
+    background-color: var(--primary-color); /* Flips to brand dark blue */
+    transform: scale(1.05);
+}
+
+/* Desktop Display Behavior */
+@media (min-width: 769px) {
+    .header-contact-boxes {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    /* Mobile Display Behavior */
+@media (max-width: 768px) {
+    .header-contact-boxes {
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 .logo img {
