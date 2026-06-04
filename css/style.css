@@ -582,3 +582,10 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+.reviews-section h2 {
+    color: var(--primary-color);    /* Turns the text into your brand blue */
+    font-size: 2rem;                /* Matches the heading size of the other sections */
+    margin-bottom: 25px;            /* Adds a clean gap between the text and the widget */
+    font-weight: 700;               /* Keeps it looking bold and professional */
+}
