@@ -206,6 +206,7 @@ body {
     border-radius: 8px;
     height: fit-content;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Adds a subtle shadow to help it lift off the page background */
+    font-weight: 600; /*Bold text to match logo */
 }
 
 .hours-box h3 {
