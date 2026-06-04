@@ -645,4 +645,55 @@ body {
     .contact-form {
         padding: 20px;          
     }
+/* --- Footer Contact Layout & Boxes --- */
+.footer-contact-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-contact-text p {
+    margin-bottom: 4px;
+}
+
+.footer-contact-boxes {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;  /* Lets the brand blue footer show through */
+    border: 2px solid #9C1A14;      /* Brand red border */
+    color: #ffffff;                 /* Pure white icon/text color */
+    border-radius: 6px;             /* Matches form's soft corner accent */
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-box svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Inverts elegantly on hover over the dark blue background */
+.footer-box:hover {
+    background-color: #9C1A14;      /* Fills box solid red */
+    border-color: #9C1A14;
+    transform: scale(1.05);         /* Subtle interactive pop */
+}
+
+/* --- Mobile Responsiveness for Footer Layout --- */
+@media (max-width: 600px) {
+    .footer-contact-container {
+        flex-direction: column;     /* Stacks the text and buttons vertically on mobile */
+        align-items: flex-start;    /* Keeps everything neatly left-aligned */
+        gap: 15px;
+    }
 }
