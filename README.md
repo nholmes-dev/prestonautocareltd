@@ -1,4 +1,4 @@
-# Preston Auto Care Ltd Website 🚗🔧
+# Preston Autocare Ltd Website 🚗🔧
 
 A modern, responsive, and highly optimized commercial website built from scratch for an active automotive service garage. This project served as a comprehensive, real-world modernization effort—replacing a legacy, high-cost system with a high-performance frontend and a fully automated DevOps deployment pipeline.
 
