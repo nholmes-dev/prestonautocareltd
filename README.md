@@ -33,18 +33,10 @@ I completely redesigned and engineered a modern web presence from the ground up,
 
 ## 📸 Project Showcase
 
-As seen in the portfolio overview (**image_3eca24.png**), the site bridges the gap between clean design and production-ready code delivery:
+As seen in the portfolio overview, the site bridges the gap between clean design and production-ready code delivery:
 
 *   Optimized for local business search intent.
 *   Fast loading speeds due to static asset deployment over global CDN edges.
 *   Clear Call-to-Actions (CTAs) for customer bookings and inquiries.
 
 ---
-
-## 💻 Local Setup & Development
-
-To clone and run this website locally for review:
-
-1. Clone the repository:
-```bash
-   git clone [https://github.com/your-username/preston-auto-care.git](https://github.com/your-username/preston-auto-care.git)
