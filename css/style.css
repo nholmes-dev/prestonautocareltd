@@ -697,6 +697,8 @@ body {
         align-items: flex-start;    /* Keeps everything neatly left-aligned */
         gap: 15px;
     }
+}
+
 /* --- Welcome Landing Page Styling --- */
 .welcome-landing-container {
     max-width: 650px;
