@@ -690,6 +690,77 @@ body {
     transform: scale(1.05);         /* Subtle interactive pop */
 }
 
+/* --- 404 Error Page Styling --- */
+.error-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: var(--font-stack);
+}
+
+.error-icon {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.error-container h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Reusing your primary button styles with minor layout adjustments */
+.error-actions .btn-primary {
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
+/* Clean outlined secondary button style */
+.btn-secondary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Tablet & Mobile adjustment for buttons stacking */
+@media (max-width: 480px) {
+    .error-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .error-container {
+        margin: 60px auto;
+    }
+    
 /* --- Mobile Responsiveness for Footer Layout --- */
 @media (max-width: 600px) {
     .footer-contact-container {
